@@ -15,7 +15,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-// Route creating. Grouping let us to propague atributes though childs...
+// Route creating. Grouping let us to propage atributes though childs...
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('authors',  ['uses' => 'AuthorController@showAllAuthors']);
   
